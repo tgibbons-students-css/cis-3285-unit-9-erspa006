@@ -35,12 +35,12 @@ namespace SingleResponsibilityPrinciple
 
             if (tradeAmount < 1000) //check for under 1000
             {
-                logger.LogWarning("WARN", " Trade amount on line {0} is too small: '{1}'", tradeData[1]);
+                logger.LogWarning("Trade amount on line {0} is too small: '{1}'", tradeData[1]);
                 return false;
             }
             if (tradeAmount > 100000)//check for over 1000
             {
-                logger.LogWarning("WARN", " Trade amount on line {0} is too small: '{1}'", tradeData[1]);
+                logger.LogWarning("Trade amount on line {0} is too small: '{1}'", tradeData[1]);
                 return false;
             }
 
